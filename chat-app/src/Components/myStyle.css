@@ -1,0 +1,33 @@
+.main-container {
+    background-color: #f4f5f8;
+    /* height: 90vh;
+    width: 90vh;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+     */
+    height: 90vh;
+    width: 90%;
+    max-width: 700px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    border-radius: 20px;
+    /* flex-direction: column; */
+    /* Stack content vertically */
+    /* align-items: center; */
+}
+
+.sidebar-conatiner {
+    /* background-color: red; */
+    flex: 0.3;
+    /* border: 5px solid red; */
+}
+
+.workarea-conatiner {
+    /* background-color: aqua; */
+    /* border: 5px solid aqua; */
+    flex: 0.7;
+}
