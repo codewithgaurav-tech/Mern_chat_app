@@ -8,8 +8,10 @@ import NightlightIcon from "@mui/icons-material/Nightlight";
 import SearchIcon from "@mui/icons-material/Search";
 import { IconButton } from "@mui/material";
 import ConversationsItems from "./ConversationsItems";
+import CreateGroups from "./CreateGroup";
 
 const Sidebar = () => {
+  const [group_open ,setGroup_open]=useState(false)
   const [conversations, setConversations] = useState([
     {
       name: "Gaurav Lalwani",
@@ -23,6 +25,10 @@ const Sidebar = () => {
     },
   ]);
   console.log(conversations);
+ const handleAddGroupClick = () => {
+  setGroup_open(!group_open)
+
+ }
   return (
     <>
       <div className="sidebar-conatiner">
@@ -37,7 +43,7 @@ const Sidebar = () => {
             <IconButton>
               <PersonAddIcon />
             </IconButton>
-            <IconButton>
+            <IconButton onClick={handleAddGroupClick}>
               <GroupAddIcon />
             </IconButton>
             <IconButton>
@@ -60,6 +66,7 @@ const Sidebar = () => {
           })}
         </div>
       </div>
+      {group_open && <CreateGroups />}
     </>
   );
 };
