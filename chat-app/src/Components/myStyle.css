@@ -183,7 +183,32 @@ border-radius: 20px;
     display: flex;
     flex-direction: column;
 }
-
+.welcome-logo {
+    height: 20vw;
+}
+.welcome-container {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-weight: bold; */
+    color: rgba(0,0,0,0.54);
+    border-bottom: 5px solid #63d7b0;
+    border-radius: 20px;
+}
+.createGroups-container {
+    flex: 0.7;
+    align-self: center;
+    padding: 20px 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
 /* Media query for screens up to 768px (e.g., tablets and mobiles) */
 @media (max-width: 768px) {
     .main-container {
